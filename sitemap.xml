@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.babilturizminsaat.com.tr/</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.babilturizminsaat.com.tr/assets/cekmekoy-render-yan.jpg</image:loc>
+      <image:title>Babil Turizm İnşaat Çekmeköy 34 Daire Projesi Dış Cephe Render</image:title>
+      <image:caption>İstanbul Çekmeköy'de 4.000 m² inşaat alanında 34 yeni nesil daire ve 34 otopark</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.babilturizminsaat.com.tr/assets/cekmekoy-render-on.jpg</image:loc>
+      <image:title>Çekmeköy Modern Konut Projesi Ön Cephe ve Balkonlar 3D Render</image:title>
+      <image:caption>Kenan Aydınoğlu İnşaat ve Babil Turizm İnşaat ortaklığı Çekmeköy projesi</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.babilturizminsaat.com.tr/assets/cekmekoy-bina-render.jpg</image:loc>
+      <image:title>Çekmeköy 34 Daire Bina Köşe Açısı ve Otopark Girişi</image:title>
+      <image:caption>Modern mimari çizgilere sahip prestijli apartman projesi</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.babilturizminsaat.com.tr/assets/normal-kat-plani.jpg</image:loc>
+      <image:title>Çekmeköy 34 Daire Zemin ve Normal Kat Mimari Planı</image:title>
+      <image:caption>Geniş balkonlu ve ergonomik iç hacimli kat planları</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.babilturizminsaat.com.tr/assets/bodrum-kat-plani.jpg</image:loc>
+      <image:title>Çekmeköy Projesi 1. Bodrum Kat ve 34 Otopark Planı</image:title>
+      <image:caption>Her daireye 1 bağımsız numaralı kapalı otopark yerleşimi</image:caption>
+    </image:image>
+  </url>
+</urlset>

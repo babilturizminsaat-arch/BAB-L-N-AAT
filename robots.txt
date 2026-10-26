@@ -1,0 +1,6 @@
+# robots.txt for https://www.babilturizminsaat.com.tr/
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://www.babilturizminsaat.com.tr/sitemap.xml
