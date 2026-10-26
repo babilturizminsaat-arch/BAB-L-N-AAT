@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileDrawer();
   initFloorPlanTabs();
   initGalleryViewer();
+  initHeaderPhoneDropdown();
 });
 
 /* --------------------------------------------------------------------------
@@ -183,5 +184,34 @@ function initGalleryViewer() {
       const title = thumb.getAttribute('data-title');
       setImg(src, title);
     });
+  });
+}
+
+/* --------------------------------------------------------------------------
+   6. Header Telefon Açılır Menüsü
+   -------------------------------------------------------------------------- */
+function initHeaderPhoneDropdown() {
+  const wrap = document.getElementById('header-phone-wrap');
+  const toggle = document.getElementById('header-phone-toggle');
+  if (!wrap || !toggle) return;
+
+  toggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const isOpen = wrap.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!wrap.contains(e.target)) {
+      wrap.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && wrap.classList.contains('open')) {
+      wrap.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
   });
 }

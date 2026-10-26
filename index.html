@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BABİL Turizm İnşaat // Çekmeköy 34 Daire & 34 Otopark</title>
-  <meta name="description" content="Babil Turizm İnşaat ve Kenan Aydınoğlu İnşaat ortaklığıyla Çekmeköy'de 4.000 m² alanda 34 yeni nesil daire ve 34 bağımsız otopark.">
+  <meta name="description" content="Babil Turizm İnşaat ve Kenan Aydınoğlu İnşaat ortaklığıyla Çekmeköy'de 4.000 m² inşaat alanında (400 m² taban oturumu) 34 yeni nesil daire ve 34 bağımsız otopark.">
   <meta name="theme-color" content="#0b0c0e">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Babil Turizm İnşaat — Çekmeköy 34 Daire & 34 Otopark">
-  <meta property="og:description" content="Çekmeköy'de 4.000 m² taban alanı, 34 seçkin daire ve 34 otopark. Temelde C35, üst katlarda C30 beton kalitesi.">
+  <meta property="og:description" content="Çekmeköy'de 4.000 m² inşaat alanı, 400 m² bina taban oturumu, 34 seçkin daire ve 34 otopark. Temelde C35, üst katlarda C30 beton kalitesi.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/cekmekoy-render-yan.jpg">
 
@@ -52,12 +52,38 @@
 
       <!-- Direct Phone & WhatsApp Actions -->
       <div class="header-action-group">
-        <a href="tel:05380174361" class="header-phone-btn" title="Hemen Arayın: 0538 017 43 61">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-          <span>0538 017 43 61</span>
-        </a>
-        <a href="https://wa.me/905380174361?text=Merhaba,%20Çekmeköy%2034%20dairelik%20projeniz%20hakkında%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" class="btn btn-primary btn-sm" aria-label="WhatsApp Bilgi Hattı">
-          <span>WhatsApp Bilgi</span>
+        
+        <!-- Dropdown Phone Menu -->
+        <div class="header-phone-menu-wrap" id="header-phone-wrap">
+          <button class="header-phone-btn" id="header-phone-toggle" aria-expanded="false" aria-haspopup="true" title="İletişim Numaralarımız">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span>Bizi Arayın</span>
+            <svg class="chevron-arrow" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          
+          <div class="header-phone-dropdown" id="header-phone-dropdown">
+            <a href="tel:05380174361" class="dropdown-caller-row">
+              <span class="caller-icon">📞</span>
+              <div class="caller-meta">
+                <span class="caller-name">Mertcan Salman</span>
+                <span class="caller-tel">0538 017 43 61</span>
+              </div>
+              <span class="caller-action">Ara ↗</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="tel:05323115267" class="dropdown-caller-row">
+              <span class="caller-icon">📞</span>
+              <div class="caller-meta">
+                <span class="caller-name">Mehmet Metin Salman</span>
+                <span class="caller-tel">0532 311 52 67</span>
+              </div>
+              <span class="caller-action">Ara ↗</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="https://wa.me/905380174361?text=Merhaba,%20Çekmeköy%2034%20dairelik%20projeniz%20hakkında%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" class="btn btn-primary btn-sm" aria-label="WhatsApp">
+          <span>WhatsApp</span>
         </a>
         <button class="mobile-toggle-btn" id="mobile-toggle" aria-expanded="false" aria-label="Mobil Menüyü Aç">
           <span class="toggle-bar"></span>
@@ -88,12 +114,8 @@
       </nav>
 
       <div class="mobile-drawer-bottom">
-        <p class="mono-label">DOĞRUDAN BİZE ULAŞIN</p>
-        <p class="drawer-phone"><a href="tel:05380174361">📞 0538 017 43 61</a></p>
-        <p class="drawer-email"><a href="mailto:tokelturizminsaat@gmail.com">✉️ tokelturizminsaat@gmail.com</a></p>
-        <p class="drawer-ig"><a href="https://instagram.com/tokelturizminsaat" target="_blank" rel="noopener">📸 @tokelturizminsaat</a></p>
-        <a href="https://wa.me/905380174361?text=Merhaba,%20Çekmeköy%2034%20dairelik%20projeniz%20hakkında%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" class="btn btn-primary btn-block" style="margin-top: 1rem;">
-          WhatsApp ile Mesaj Gönder
+        <a href="#contact" class="btn btn-primary btn-block">
+          Bize Ulaşın
         </a>
       </div>
     </div>
@@ -117,7 +139,7 @@
           <div class="hero-left animate-on-scroll stagger-1">
             <!-- Kristal Netliğinde, Yüksek Okunabilirlikli Başlık -->
             <h1 class="hero-title">
-              Çekmeköy’de 4.000 m² Alanda <br>
+              Çekmeköy’de 4.000 m² İnşaat Alanında <br>
               <span class="text-terracotta">Yeni Nesil 34 Daire</span> <br>
               <span class="text-white">& 34 Bağımsız Otopark.</span>
             </h1>
@@ -127,12 +149,12 @@
             </p>
 
             <div class="hero-cta-buttons">
-              <a href="tel:05380174361" class="btn btn-primary btn-lg-action">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                <span>Hemen Bizi Arayın: 0538 017 43 61</span>
+              <a href="#project" class="btn btn-primary btn-lg-action">
+                <span>Projeyi İnceleyin</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               </a>
-              <a href="https://wa.me/905380174361?text=Merhaba,%20Çekmeköy%2034%20dairelik%20projeniz%20hakkında%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" class="btn btn-ghost btn-lg-action">
-                <span>WhatsApp'tan Yazın</span>
+              <a href="#gallery" class="btn btn-ghost btn-lg-action">
+                <span>3D Mimari Görseller</span>
               </a>
             </div>
 
@@ -140,7 +162,7 @@
             <div class="project-facts-bar">
               <div class="fact-cell">
                 <span class="fact-num">4.000<span class="unit">m²</span></span>
-                <span class="fact-label">Taban Alanı</span>
+                <span class="fact-label">İnşaat Alanı (400 m² Taban)</span>
               </div>
               <div class="fact-divider" aria-hidden="true"></div>
               <div class="fact-cell">
@@ -208,9 +230,9 @@
             <div class="card-icon" aria-hidden="true">
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
             </div>
-            <h3 class="card-title">4.000 m² Taban Alanı</h3>
+            <h3 class="card-title">4.000 m² İnşaat Alanı</h3>
             <p class="card-text">
-              Geniş parsel alanı sayesinde binalar sıkışmaz. Ferah cephe aralıkları, yeşil çevre düzenlemesi ve ferah görüş açısı sağlanır.
+              400 m² bina taban oturumu üzerine inşa edilen toplam 4.000 m² modern brüt inşaat alanı. Ferah kat yerleşimleri, geniş çevre ve açık yaşam alanları.
             </p>
           </div>
 
@@ -477,8 +499,12 @@
                   <strong class="t-v text-terracotta">34 Daireye 34 Otopark</strong>
                 </div>
                 <div class="t-row">
-                  <span class="t-k">Taban / Arsa Alanı</span>
+                  <span class="t-k">Toplam İnşaat Alanı</span>
                   <strong class="t-v text-white">4.000 m²</strong>
+                </div>
+                <div class="t-row">
+                  <span class="t-k">Bina Taban Alanı</span>
+                  <strong class="t-v text-white">400 m²</strong>
                 </div>
                 <div class="t-row">
                   <span class="t-k">Asansör Sistemi</span>
@@ -560,47 +586,63 @@
 
         <div class="direct-action-grid animate-on-scroll">
           
-          <!-- Action 1: Telefonla Arama -->
+          <!-- Action 1: Telefonla Arama - Mertcan Salman -->
           <a href="tel:05380174361" class="action-card call-card">
             <div class="action-icon">📞</div>
             <div class="action-details">
-              <span class="action-badge mono-label">DOĞRUDAN ARAMA</span>
-              <h3 class="action-main-val">0538 017 43 61</h3>
-              <p class="action-desc">Tıklayın, doğrudan proje yetkilimiz ile görüşün.</p>
-              <span class="action-btn-pill">Hemen Ara →</span>
+              <span class="action-badge mono-label">PROJE YETKİLİSİ // ARAMA</span>
+              <h3 class="action-main-val">Mertcan Salman</h3>
+              <p class="action-phone-sub mono-label">0538 017 43 61</p>
+              <p class="action-desc">Tıklayın, doğrudan Mertcan Salman ile görüşün.</p>
+              <span class="action-btn-pill">Hemen Ara ↗</span>
             </div>
           </a>
 
-          <!-- Action 2: WhatsApp Mesaj -->
+          <!-- Action 2: Telefonla Arama - Mehmet Metin Salman -->
+          <a href="tel:05323115267" class="action-card call-card">
+            <div class="action-icon">📞</div>
+            <div class="action-details">
+              <span class="action-badge mono-label">PROJE YETKİLİSİ // ARAMA</span>
+              <h3 class="action-main-val">Mehmet Metin Salman</h3>
+              <p class="action-phone-sub mono-label">0532 311 52 67</p>
+              <p class="action-desc">Tıklayın, doğrudan Mehmet Metin Salman ile görüşün.</p>
+              <span class="action-btn-pill">Hemen Ara ↗</span>
+            </div>
+          </a>
+
+          <!-- Action 3: WhatsApp Mesaj -->
           <a href="https://wa.me/905380174361?text=Merhaba,%20Çekmeköy%2034%20dairelik%20projeniz%20hakkında%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" class="action-card whatsapp-card">
             <div class="action-icon">💬</div>
             <div class="action-details">
               <span class="action-badge mono-label">WHATSAPP BİLGİ HATTI</span>
-              <h3 class="action-main-val">0538 017 43 61</h3>
-              <p class="action-desc">Tek tıkla mesaj atın, kat planlarını ve fiyatları isteyin.</p>
-              <span class="action-btn-pill">WhatsApp'tan Yaz →</span>
+              <h3 class="action-main-val">WhatsApp</h3>
+              <p class="action-phone-sub mono-label">0538 017 43 61</p>
+              <p class="action-desc">Tek tıkla WhatsApp'tan mesaj atın, kat planlarını ve fiyatları isteyin.</p>
+              <span class="action-btn-pill">WhatsApp'tan Yaz ↗</span>
             </div>
           </a>
 
-          <!-- Action 3: Instagram -->
+          <!-- Action 4: Instagram -->
           <a href="https://instagram.com/tokelturizminsaat" target="_blank" rel="noopener" class="action-card ig-card">
             <div class="action-icon">📸</div>
             <div class="action-details">
               <span class="action-badge mono-label">INSTAGRAM RESMİ HESAP</span>
               <h3 class="action-main-val">@tokelturizminsaat</h3>
+              <p class="action-phone-sub mono-label">Sosyal Medya</p>
               <p class="action-desc">Şantiye aşamalarını, videoları ve güncel duyuruları takip edin.</p>
-              <span class="action-btn-pill">Profile Git →</span>
+              <span class="action-btn-pill">Profile Git ↗</span>
             </div>
           </a>
 
-          <!-- Action 4: E-Posta -->
+          <!-- Action 5: E-Posta -->
           <a href="mailto:tokelturizminsaat@gmail.com" class="action-card email-card">
             <div class="action-icon">✉️</div>
             <div class="action-details">
               <span class="action-badge mono-label">E-POSTA İLE YAZIN</span>
               <h3 class="action-main-val">tokelturizminsaat@gmail.com</h3>
+              <p class="action-phone-sub mono-label">Resmi Yazışma</p>
               <p class="action-desc">Resmi teklif ve detaylı proje sunumu talep edin.</p>
-              <span class="action-btn-pill">E-Posta Gönder →</span>
+              <span class="action-btn-pill">E-Posta Gönder ↗</span>
             </div>
           </a>
 
@@ -613,7 +655,7 @@
               <span class="mono-label text-terracotta">PROJE ŞANTİYE KONUMU</span>
               <h3 class="loc-title">Çekmeköy, İstanbul</h3>
               <p class="loc-desc">
-                4.000 m² taban alanı üzerinde inşaatı süren 34 dairelik projemizi şantiyede yerinde incelemek için randevulaşalım.
+                400 m² bina taban oturumunda toplam 4.000 m² inşaat alanıyla yükselen 34 dairelik projemizi şantiyede yerinde incelemek için randevulaşalım.
               </p>
             </div>
             <div class="loc-btn-wrap">
@@ -641,7 +683,7 @@
         </div>
         
         <div class="footer-contact-chips">
-          <a href="tel:05380174361" class="f-chip">📞 0538 017 43 61</a>
+          <a href="#contact" class="f-chip">📍 Bize Ulaşın</a>
           <a href="mailto:tokelturizminsaat@gmail.com" class="f-chip">✉️ tokelturizminsaat@gmail.com</a>
           <a href="https://instagram.com/tokelturizminsaat" target="_blank" rel="noopener" class="f-chip">📸 @tokelturizminsaat</a>
         </div>
@@ -652,7 +694,7 @@
           © 2026 BABİL TURİZM İNŞAAT & KENAN AYDINOĞLU İNŞAAT ORTAKLIĞI. TÜM HAKLARI SAKLIDIR.
         </p>
         <p class="footer-location mono-label">
-          PROJE: ÇEKMEKÖY / İSTANBUL · 4.000 m² TABAN ALANI · 34 DAİRE · 34 OTOPARK
+          PROJE: ÇEKMEKÖY / İSTANBUL · 4.000 m² İNŞAAT ALANI · 400 m² TABAN OTURUMU · 34 DAİRE · 34 OTOPARK
         </p>
       </div>
 
