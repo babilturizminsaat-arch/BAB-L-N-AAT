@@ -1648,10 +1648,20 @@ img {
 .stagger-3 { transition-delay: 0.3s; }
 
 /* --------------------------------------------------------------------------
-   16. Responsive Medya Sorguları
+   16. Responsive Medya Sorguları & Mobil Kusursuzlaştırma
    -------------------------------------------------------------------------- */
+.desktop-br {
+  display: inline;
+}
+.btn-text-desktop {
+  display: inline;
+}
+.btn-text-mobile {
+  display: none;
+}
+
 @media (max-width: 1080px) {
-  .nav-links-desktop, .header-phone-btn {
+  .nav-links-desktop {
     display: none;
   }
   .mobile-toggle-btn {
@@ -1672,64 +1682,441 @@ img {
 }
 
 @media (max-width: 768px) {
-  .brand-logo-frame {
-    padding: 4px 10px;
+  /* Performans: Mobilde kaydırma takılmasını önlemek için SVG noise katmanını gizle */
+  .grain-overlay::after {
+    display: none !important;
   }
-  .brand-logo-img {
-    height: 38px;
-    max-width: 135px;
+
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
   }
+
+  .desktop-br {
+    display: none;
+  }
+
+  .btn-text-desktop {
+    display: none;
+  }
+
+  .btn-text-mobile {
+    display: inline;
+  }
+
+  /* Header */
   .site-header {
-    height: 70px;
+    height: 64px;
   }
+
+  .brand-logo-frame {
+    padding: 3px 8px;
+  }
+
+  .brand-logo-img {
+    height: 34px;
+    max-width: 105px;
+  }
+
+  .header-action-group {
+    gap: 8px;
+  }
+
+  .header-phone-btn {
+    display: inline-flex;
+    padding: 7px 11px;
+    font-size: 0.8rem;
+    gap: 5px;
+    border-radius: var(--radius-xs);
+  }
+
+  .header-phone-dropdown {
+    width: 250px;
+    max-width: calc(100vw - 20px);
+    right: 0;
+  }
+
+  .btn-sm {
+    padding: 7px 12px;
+    font-size: 0.82rem;
+  }
+
+  .mobile-toggle-btn {
+    padding: 7px 8px;
+  }
+
+  /* Sections */
   .section {
-    padding: 60px 0;
+    padding: 50px 0;
   }
-  .grid-2, .grid-3 {
-    grid-template-columns: 1fr;
+
+  /* Hero Section */
+  .hero-section {
+    padding-top: 86px;
+    padding-bottom: 40px;
   }
+
+  .hero-partnership-badge {
+    margin-bottom: 18px;
+    padding: 8px 12px;
+    gap: 6px;
+    border-radius: var(--radius-xs);
+  }
+
+  .badge-sep {
+    display: none;
+  }
+
+  .hero-partnership-badge .partner-text {
+    font-size: 0.78rem;
+    width: 100%;
+    margin-top: 2px;
+    line-height: 1.35;
+  }
+
+  .hero-title {
+    font-size: clamp(1.75rem, 6vw + 0.3rem, 2.45rem);
+    line-height: 1.25;
+    margin-bottom: 14px;
+  }
+
+  .hero-subtext {
+    font-size: 0.96rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .hero-cta-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 22px;
+  }
+
+  .hero-cta-buttons .btn {
+    width: 100%;
+    justify-content: center;
+    padding: 13px 20px;
+    font-size: 0.95rem;
+  }
+
+  /* Hero Facts Bar */
   .project-facts-bar {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: var(--space-md);
+    gap: 8px;
+    padding: 10px;
+    margin-top: 10px;
   }
+
   .fact-divider {
     display: none;
   }
+
+  .fact-cell {
+    padding: 10px 12px;
+    background: rgba(255, 255, 255, 0.035);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: var(--radius-sm);
+  }
+
+  .fact-num {
+    font-size: 1.45rem;
+  }
+
+  .fact-label {
+    font-size: 0.72rem;
+    line-height: 1.35;
+  }
+
+  /* Hero Visual Image */
   .visual-img-wrap {
-    height: 380px;
+    height: auto;
+    aspect-ratio: 16 / 10;
+    min-height: 220px;
   }
-  .gallery-img-container {
-    min-height: 340px;
-    padding: 10px;
+
+  .project-main-img {
+    object-fit: cover;
   }
-  .gallery-thumbs-grid {
+
+  .visual-tag-overlay {
+    padding: 12px 14px;
+  }
+
+  .visual-title {
+    font-size: 1.15rem;
+  }
+
+  /* Grid Layouts & Cards */
+  .grid-2, .grid-3 {
     grid-template-columns: 1fr;
+    gap: 16px;
   }
+
+  .card {
+    padding: 22px 18px;
+  }
+
+  .card-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 14px;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+
+  .card-text {
+    font-size: 0.92rem;
+    line-height: 1.6;
+  }
+
+  /* 3D Gallery Viewer */
+  .gallery-img-container {
+    min-height: 200px;
+    max-height: 310px;
+    padding: 6px;
+  }
+
+  .gallery-thumbs-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-top: 10px;
+  }
+
   .thumb-img-wrap {
-    height: 120px;
+    height: 60px;
   }
+
+  .thumb-label {
+    font-size: 0.65rem;
+    padding: 5px 2px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .gallery-footer-bar {
+    padding: 8px 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  /* Floor Plans */
+  .plans-switcher-bar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+    margin-bottom: 18px;
+  }
+
+  .plan-tab-btn {
+    width: 100%;
+    padding: 11px 14px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .tab-badge {
+    padding: 2px 7px;
+    font-size: 0.72rem;
+  }
+
+  .tab-text {
+    font-size: 0.88rem;
+    font-weight: 700;
+  }
+
+  .tab-sub {
+    font-size: 0.75rem;
+    opacity: 0.85;
+  }
+
+  .plan-media-frame {
+    padding: 8px;
+  }
+
   .plan-specs-bar {
     grid-template-columns: 1fr;
+    padding: 16px;
+    gap: 12px;
   }
+
+  .spec-col strong {
+    font-size: 0.88rem;
+  }
+
+  /* Engineering Specs Box */
+  .tech-spec-box {
+    padding: 20px 16px;
+  }
+
+  .t-row {
+    padding: 8px 0;
+    font-size: 0.88rem;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .t-k {
+    font-size: 0.82rem;
+  }
+
+  .t-v {
+    font-size: 0.92rem;
+    text-align: right;
+  }
+
+  /* Partnership Section */
+  .partnership-wrapper {
+    padding: 24px 16px;
+  }
+
   .dual-logos-box {
-    gap: var(--space-xl);
-  }
-  .action-card {
     flex-direction: column;
-    gap: var(--space-md);
+    gap: 16px;
+    margin: 24px 0;
   }
+
+  .partner-logo-item {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .partner-img-frame {
+    width: 100%;
+    max-width: 260px;
+    justify-content: center;
+  }
+
+  .partner-plus {
+    font-size: 1.5rem;
+    margin: 2px 0;
+  }
+
+  .partner-name {
+    font-size: 1.15rem;
+  }
+
+  .partner-role {
+    font-size: 0.82rem;
+  }
+
+  /* Contact Section */
+  .action-card {
+    padding: 18px 16px;
+    gap: 14px;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .action-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+  }
+
+  .action-details {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .action-main-val {
+    font-size: 1.15rem;
+  }
+
+  .action-phone-sub {
+    font-size: 0.88rem;
+  }
+
+  .action-desc {
+    font-size: 0.85rem;
+    margin: 4px 0 8px;
+    line-height: 1.45;
+  }
+
+  .action-btn-pill {
+    font-size: 0.78rem;
+    padding: 4px 10px;
+  }
+
+  /* Location Banner */
+  .project-location-banner {
+    padding: 20px 16px;
+  }
+
   .loc-banner-inner {
     flex-direction: column;
     align-items: flex-start;
+    gap: 16px;
   }
+
+  .loc-title {
+    font-size: 1.25rem;
+  }
+
+  .loc-desc {
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+
+  .loc-btn-wrap {
+    width: 100%;
+  }
+
+  .loc-btn-wrap .btn {
+    width: 100%;
+    justify-content: center;
+    font-size: 0.9rem;
+  }
+
+  /* Footer */
+  .site-footer {
+    padding: 40px 0 24px;
+  }
+
   .footer-top-row {
     flex-direction: column;
     align-items: flex-start;
+    gap: 16px;
   }
+
+  .footer-contact-chips {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 8px;
+  }
+
+  .f-chip {
+    font-size: 0.78rem;
+    padding: 8px 12px;
+    max-width: 100%;
+    word-break: break-all;
+    text-align: center;
+  }
+
   .footer-bottom-row {
     flex-direction: column;
     align-items: flex-start;
+    gap: 10px;
+    margin-top: 24px;
+    padding-top: 20px;
+  }
+
+  .copyright, .footer-location {
+    font-size: 0.68rem;
+    line-height: 1.45;
   }
 }
 
