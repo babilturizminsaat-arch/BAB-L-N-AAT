@@ -2919,6 +2919,10 @@ img {
   color: var(--color-text-primary);
 }
 
+.featured-spec-val.text-terracotta {
+  color: var(--color-primary);
+}
+
 /* Future Pipeline Grid */
 .pipeline-cards-grid {
   display: grid;
@@ -3724,6 +3728,16 @@ img {
     font-size: 0.74rem;
     min-height: 32px;
   }
+  .featured-specs-grid {
+    gap: 10px 10px;
+    padding: 12px 10px;
+  }
+  .featured-spec-key {
+    font-size: 0.62rem;
+  }
+  .featured-spec-val {
+    font-size: 0.9rem;
+  }
 }
 
 /* Responsive adjustments for corporate components */
@@ -4018,12 +4032,65 @@ img {
     padding: 24px 18px;
   }
 
+  .featured-showcase-box {
+    margin-top: 24px;
+    border-radius: var(--radius-md);
+  }
+
+  .featured-showcase-media {
+    min-height: 240px;
+    max-height: 290px;
+  }
+
   .featured-showcase-body {
-    padding: 32px 20px;
+    padding: 22px 16px 20px;
+  }
+
+  .featured-project-tagline {
+    font-size: 0.68rem;
+    margin-bottom: 6px;
+  }
+
+  .featured-project-title {
+    font-size: 1.45rem;
+    margin-bottom: 10px;
+  }
+
+  .featured-project-lead {
+    font-size: 0.88rem;
+    line-height: 1.55;
+    margin-bottom: 18px;
   }
 
   .featured-specs-grid {
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12px 14px;
+    padding: 16px 14px;
+    margin-bottom: 18px;
+    background: rgba(26, 30, 39, 0.7);
+    border: 1px solid rgba(226, 151, 123, 0.22);
+    border-radius: var(--radius-sm);
+  }
+
+  .featured-spec-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .featured-spec-key {
+    font-size: 0.66rem;
+    letter-spacing: 0.05em;
+  }
+
+  .featured-spec-val {
+    font-size: 0.98rem;
+    line-height: 1.25;
+  }
+
+  .featured-spec-val.text-terracotta {
+    color: var(--color-primary) !important;
   }
 
   /* 3D Galeri Sekmeleri Yatay Kaydırma */
