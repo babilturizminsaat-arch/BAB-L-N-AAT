@@ -3,17 +3,38 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.babilturizminsaat.com.tr/</loc>
-    <lastmod>2026-10-26</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://www.babilturizminsaat.com.tr/assets/cekmekoy-render-yan.jpg</image:loc>
-      <image:title>Babil Turizm İnşaat Çekmeköy 34 Daire Projesi Dış Cephe Render</image:title>
+      <image:title>Babil İnşaat İstanbul Kat Karşılığı Arsa ve Konut Projeleri</image:title>
+      <image:caption>1969'dan Bugüne Sarsılmaz Güven, Çağdaş Mimarinin Geleceğiyle Buluşuyor</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.babilturizminsaat.com.tr/assets/babil-logo-horizontal-white.png</image:loc>
+      <image:title>Babil Turizm İnşaat Kurumsal Logo</image:title>
+      <image:caption>Babil Turizm İnşaat Sanayi ve Ticaret Limited Şirketi</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.babilturizminsaat.com.tr/assets/kenan-aydinoglu-logo-clean.png</image:loc>
+      <image:title>Kenan Aydınoğlu İnşaat Since 1969 Logo</image:title>
+      <image:caption>57 Yıllık Şantiye ve Statik Mühendislik Disiplini</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.babilturizminsaat.com.tr/cekmekoy-projesi.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.babilturizminsaat.com.tr/assets/cekmekoy-render-yan.jpg</image:loc>
+      <image:title>Babil İnşaat Çekmeköy 34 Daire Projesi Dış Cephe 3D Render</image:title>
       <image:caption>İstanbul Çekmeköy'de 4.000 m² inşaat alanında 34 yeni nesil daire ve 34 otopark</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.babilturizminsaat.com.tr/assets/cekmekoy-render-on.jpg</image:loc>
-      <image:title>Çekmeköy Modern Konut Projesi Ön Cephe ve Balkonlar 3D Render</image:title>
+      <image:title>Çekmeköy Modern Konut Projesi Ön Cephe ve Geniş Balkonlar</image:title>
       <image:caption>Kenan Aydınoğlu İnşaat ve Babil Turizm İnşaat ortaklığı Çekmeköy projesi</image:caption>
     </image:image>
     <image:image>
@@ -28,7 +49,7 @@
     </image:image>
     <image:image>
       <image:loc>https://www.babilturizminsaat.com.tr/assets/bodrum-kat-plani.jpg</image:loc>
-      <image:title>Çekmeköy Projesi 1. Bodrum Kat ve 34 Otopark Planı</image:title>
+      <image:title>Çekmeköy Projesi 1. Bodrum Kat ve 34 Kapalı Otopark Planı</image:title>
       <image:caption>Her daireye 1 bağımsız numaralı kapalı otopark yerleşimi</image:caption>
     </image:image>
   </url>
